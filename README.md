@@ -30,8 +30,10 @@ Each finished part is tagged (`part-1`, `part-2`, ...) so you can see the repo e
 ## Try it
 
 ```bash
-python split_bill.py
+python3 -m venv .venv
+source .venv/bin/activate      # On Windows: .venv\Scripts\activate
 python -m pip install pytest
+python split_bill.py
 python -m pytest -q
 ```
 
@@ -52,6 +54,8 @@ Total paid (cents): 10000
 - `.github/workflows/tests.yml`: runs the tests on every push, so nothing broken gets in.
 
 ## Read the series
+
+📚 All parts in order: [Harness Engineering From Scratch on Medium](https://medium.com/@ssaigavaskar/list/harness-engineering-from-scratch-05934d98f463)
 
 - Part 1: *link coming soon*
 
